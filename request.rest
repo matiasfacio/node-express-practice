@@ -1,0 +1,23 @@
+GET http://localhost:3000/
+
+###
+
+POST  http://localhost:3000/createfile
+Content-Type: application/json
+
+{
+    "name":"matias facio"
+}
+
+###
+
+DELETE  http://localhost:3000/deletefile
+
+###
+
+POST http://localhost:3000/admin/login/
+Content-Type: application/json
+
+{
+    "email": "matiaspersonal@gmail.com"
+}
