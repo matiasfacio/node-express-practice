@@ -3,6 +3,7 @@ const morgan = require('morgan')
 const route = require('./Routes/routes.js')
 const routeAdmin = require('./Routes/admin')
 const helmet = require('helmet')
+const fs = require('fs')
 
 
 const PORT = process.env.PORT || 3000;
@@ -18,3 +19,5 @@ app.use('/', route)
 app.listen(PORT, ()=> {
     console.log('listening port 3000');
 })
+
+

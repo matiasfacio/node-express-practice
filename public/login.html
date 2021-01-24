@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <style>
+    body {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    a, button {
+      text-decoration: none;
+      border: none;
+      background-color: aquamarine;
+      color: black;
+      border-radius: 10px;
+      font-size: 1.3rem;
+      padding: 7px 10px;
+      max-width: 150px;
+      margin: 10px;
+      outline: none;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      padding: 20px;
+      margin: 50px;
+      width: 300px;
+    }
+
+    input {
+        padding: 5px;
+        font-size: 1.1rem;
+    }
+
+  </style>
+
+  <body>
+    <form action="http://localhost:5000/login" method="POST">
+      <label for="userid">User Id</label>
+      <input type="text" name="userid" placeholder="your user id" />
+      <label for="email">email</label>
+      <input id="email" type="email" name="email" placeholder="m@m.de" />
+      <button type="submit">Submit</button>
+    </form>
+
+    <a href="/index.html">Homepage</a>
+  </body>
+</html>
